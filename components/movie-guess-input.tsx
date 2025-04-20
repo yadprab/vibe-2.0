@@ -161,11 +161,11 @@ export default function MovieGuessInput({
 
   return (
     <div ref={containerRef} className={`${isShaking ? "animate-shake" : ""}`}>
-      <div className="flex flex-wrap gap-2 justify-center mb-4">
+      <div className="flex flex-wrap gap-1 sm:gap-2 justify-center mb-4">
         {Array.from({ length: actualLength }).map((_, i) => {
           const isCorrect = !!correctLetters[i]
           return (
-            <div key={i} className="w-[calc(10%-8px)] max-w-[40px]">
+            <div key={i} className="w-[30px] sm:w-[35px] md:w-[40px]">
               <LetterInput
                 value={letters[i] || ""}
                 index={i}

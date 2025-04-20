@@ -166,8 +166,8 @@ export default function MovieGuesser() {
 
   return (
     <div ref={gameContainerRef} className="game-container">
-      <div className="pink-card p-6 mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div className="pink-card p-4 sm:p-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
           <div className="md:col-span-5">
             <div className="poster-container">
               <ScratchPoster
@@ -182,8 +182,8 @@ export default function MovieGuesser() {
           <div className="md:col-span-7">
             <div className="guess-container">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-normal text-[#4a4a6a]">Guess That Flick</h3>
-                <span className="badge">
+                <h3 className="text-lg sm:text-xl font-normal text-[#4a4a6a]">Guess That Flick</h3>
+                <span className="badge text-xs sm:text-sm">
                   {gameState === "playing"
                     ? `Attempt ${attempts + 1}/${maxAttempts}`
                     : gameState === "won"

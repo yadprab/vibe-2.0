@@ -92,7 +92,7 @@ export default function LetterInput({
           onChange(newValue, index)
         }}
         onKeyDown={(e) => onKeyDown(e, index)}
-        className={`letter-input ${getStatusClass()}`}
+        className={`letter-input ${getStatusClass()} w-full text-center`}
         maxLength={maxLength}
         disabled={disabled}
         aria-label={`Letter ${index + 1}`}
